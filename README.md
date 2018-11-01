@@ -6,7 +6,6 @@
 #
 #Creating table
 #
-#
 #CREATE TABLE military.MILITARY_RECRUIT (
 ID INT(10) NOT NULL auto_increment, 
 FIRSTNAME VARCHAR(30) NOT NULL,
@@ -19,7 +18,6 @@ DOCUMENTCREATE DATE,
 DOCUMENTEXPIRED DATE, 
  PRIMARY KEY (`ID`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
-#
 #
 #
 #insert data
