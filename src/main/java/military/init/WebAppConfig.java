@@ -1,6 +1,7 @@
 package military.init;
 
 import org.hibernate.jpa.HibernatePersistenceProvider;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -105,7 +106,7 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public ViewResolver ContentNegotiationManager(ContentNegotiationManager manager){
+    public ViewResolver contentNegotiationManager(ContentNegotiationManager manager){
         List<ViewResolver> resolvers = new ArrayList<ViewResolver>();
         InternalResourceViewResolver pageResolver = new InternalResourceViewResolver();
         pageResolver.setPrefix("/WEB-INF/");

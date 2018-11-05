@@ -49,11 +49,21 @@ public class MilitaryServiseImpl implements MilitaryService{
     public Military delete(long id) {
         Military militaryDelete = get(id);
         if (militaryDelete !=null){
-            militaryRepository.delete(id);
+            militaryRepository.delete(Math.toIntExact(id));
             return militaryDelete;
         }
         return null;
     }
+
+    /*@Override
+    public Military delete(int id) {
+        Military militaryDelete = get(id);
+        if (militaryDelete !=null){
+            militaryRepository.delete(id);
+            return militaryDelete;
+        }
+        return null;
+    }*/
 
     @Override
     public List<Military> getAll() {

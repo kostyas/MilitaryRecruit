@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class MilitaryRepository implements JpaRepository<Military, Integer> {
+
     @Override
     public List<Military> findAll() {
         return null;
@@ -43,6 +44,10 @@ public class MilitaryRepository implements JpaRepository<Military, Integer> {
 
     @Override
     public void delete(Military military) {
+
+    }
+
+    public void delete(int military) {
 
     }
 
@@ -131,6 +136,4 @@ public class MilitaryRepository implements JpaRepository<Military, Integer> {
         return false;
     }
 
-    public void delete(long id) {
-    }
 }
