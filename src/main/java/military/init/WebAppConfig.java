@@ -33,7 +33,7 @@ import java.util.Properties;
 @EnableWebMvc
 @ComponentScan("military")
 @EnableTransactionManagement
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:/application.properties")
 @EnableJpaRepositories("military.repository")
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 

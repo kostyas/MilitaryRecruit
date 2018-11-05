@@ -1,0 +1,8 @@
+military\init\Initializer.class
+military\services\MilitaryService.class
+military\init\JsonViewResolver.class
+military\services\MilitaryServiseImpl.class
+military\controller\MilitaryController.class
+military\init\WebAppConfig.class
+military\repository\MilitaryRepository.class
+military\model\Military.class

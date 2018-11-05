@@ -15,6 +15,9 @@ public class MilitaryServiseImpl implements MilitaryService{
     @Autowired
     private MilitaryRepository militaryRepository;
 
+    @Autowired
+    private MilitaryService militaryService;
+
     @Override
     public Military create(Military military) {
         return militaryRepository.save(military);

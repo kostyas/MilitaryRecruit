@@ -10,5 +10,4 @@ public interface MilitaryService {
     public Military update(Military military);
     public Military delete(long id);
     public List<Military> getAll();
-    //public List<Military> search(SearchDTO searchDTO);
 }
